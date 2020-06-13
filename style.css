@@ -1,0 +1,47 @@
+body {
+  padding: 10px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.contents {
+  display: flex;
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+  flex-direction: row;
+}
+.tank {
+  overflow: auto;
+  width: 100%;
+  border: 1px solid black;
+  min-width: 600px;
+}
+.uploader {
+  padding-top: 40px;
+  align-items: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .contents {
+    flex-direction: column;
+  }
+  .uploader {
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+  }
+}
